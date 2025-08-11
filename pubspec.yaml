@@ -15,3 +15,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+/*********************Update pubspec.yaml*******************************/
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.0.0
+  firebase_auth: ^5.0.0
+/************************************************/ once firebase created done use this dependencies*******
