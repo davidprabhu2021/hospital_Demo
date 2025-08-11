@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'screens/login_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(HospitalApp());
 }
 
@@ -11,7 +14,7 @@ class HospitalApp extends StatelessWidget {
     return MaterialApp(
       title: 'Hospital App',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: HomeScreen(),
+      home: LoginScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
